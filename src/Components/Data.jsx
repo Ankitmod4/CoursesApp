@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar';
-
+import './Data.css';
 const Data = () => {
   const [courses, setCourses] = useState([]);
   const [web, setWeb] = useState([]);
@@ -90,12 +90,12 @@ const Data = () => {
       <>
           <Navbar />
       <div  style={{ padding: '20px'  }}  >
-      <button style={{ padding: '20px', margin: '20px' ,width:'150px'}}  onClick={showAll}>ALL</button>
-      <button   style={{padding:'20px',margin:'20px',width:'150px'}}  onClick={Web}>Web D</button>
-      <button style={{padding:'20px',margin:'20px',width:'150px'}}  onClick={DS}>Data Science</button>
-      <button style={{padding:'20px',margin:'20px',width:'150px'}}  onClick={ST}>Software T</button>
-      <button style={{padding:'20px',margin:'20px',width:'150px'}}  onClick={Mobile}>Mobile Apps</button>
-      <button style={{padding:'20px',margin:'20px',width:'150px'}}  onClick={Devops}>DevOps</button>
+      <button className='bg-success' style={{ padding: '20px', margin: '20px' ,width:'150px'}}  onClick={showAll}>ALL</button>
+      <button className='bg-success'   style={{padding:'20px',margin:'20px',width:'150px'}}  onClick={Web}>Web D</button>
+      <button className='bg-success' style={{padding:'20px',margin:'20px',width:'150px'}}  onClick={DS}>Data Science</button>
+      <button className='bg-success' style={{padding:'20px',margin:'20px',width:'150px'}}  onClick={ST}>Software T</button>
+      <button className='bg-success' style={{padding:'20px',margin:'20px',width:'150px'}}  onClick={Mobile}>Mobile Apps</button>
+      <button className='bg-success' style={{padding:'20px',margin:'20px',width:'150px'}}  onClick={Devops}>DevOps</button>
          
           </div>
       
